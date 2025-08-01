@@ -23,28 +23,31 @@ body{
     transition: var(--tran-05);
 }
 .content{
-    transform: translateY(80px);
+    transform: translateY(90px);
 }
 .nav{
-    background-color: #f7f7f7;
+    background-color: #120dbf;
     height: 80px;
-    border-bottom-left-radius: 19px;
-    border-bottom-right-radius: 19px;
+    outline: solid 1px #ffffff6b;
+    margin: 10px;
+    border-radius: 19px;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 20px);
     z-index: 9999;
 }
 .nav .logo{
-    margin-left: 30px;
+    margin-left: 19px;
     margin-top: 10px;
 }
 .nav .homebutton{
     float: right;
-    margin-right: 60px;
+    margin-right: 40px;
     font-size: 20px;
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.084);
+    margin-top: 24px;
+    outline: 1px solid #ffffff73;
+    background-color: rgba(0, 14, 58, 0.397);
     padding-left: 18px;
+    color: #fff;
     padding-right: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -191,5 +194,48 @@ body{
         margin-right: 20px;
         margin-top: 10px;
         border-radius: 15px;
+    }
+    .footer{
+        background-color: #efefef;
+        height: 240px;
+        padding: 30px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .home-icon .article-title{
+        font-size: 20px;
+    }
+    .home-icon{
+        position: relative;
+        object-fit: cover;
+        width: calc(100%-90px);
+        height: 300px;
+        margin-left: 13px;
+        margin-right: 10px;
+        padding-top: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: ease 0.5s;
+    }
+    .nav .logo{
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+    .nav .homebutton{
+        float: right;
+        margin-right: 22px;
+        font-size: 18px;
+        margin-top: 24px;
+        outline: 1px solid #ffffff73;
+        background-color: rgba(0, 14, 58, 0.397);
+        padding-left: 18px;
+        color: #fff;
+        padding-right: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        cursor: pointer;
     }
 }
