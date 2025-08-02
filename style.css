@@ -90,8 +90,8 @@ body{
 }
 .footer{
     background-color: #efefef;
-    height: 160px;
-    padding: 10px;
+    height: 190px;
+    padding: 40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -161,6 +161,12 @@ body{
    border-radius: 5px;
    transform: translateY(8px);
 }
+.splitarticle{
+    display: flex;
+}
+.splitarticle p{
+    margin-right: 40px;
+}
 @media screen and (max-width: 650px) {
     .home-icon{
         height: 300px;
@@ -201,6 +207,9 @@ body{
         padding: 30px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+    .splitarticle{
+        display: block;
     }
 }
 @media screen and (max-width: 450px) {
