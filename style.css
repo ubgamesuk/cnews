@@ -25,6 +25,11 @@ body{
 .content{
     transform: translateY(90px);
 }
+.content i{
+    transform: translateY(3.5px);
+    margin-right: 12px;
+    font-size: 26px;
+}
 .nav{
     background-color: #120dbf;
     height: 80px;
@@ -36,23 +41,47 @@ body{
     z-index: 9999;
 }
 .nav .logo{
+    height: 60px;
     margin-left: 19px;
     margin-top: 10px;
+    transition: ease 0.2s;
 }
-.nav .homebutton{
-    float: right;
-    margin-right: 40px;
-    font-size: 20px;
-    margin-top: 24px;
+.rightbuttons .homebutton{
+    margin-right: 35px;
+    font-size: 27px;
     outline: 1px solid #ffffff73;
     background-color: rgba(0, 14, 58, 0.397);
-    padding-left: 18px;
-    color: #fff;
-    padding-right: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: #fff;
     border-radius: 15px;
     cursor: pointer;
+}
+.rightbuttons .uploadnav{
+    font-size: 20px;
+    outline: 1px solid #ffffff73;
+    background-color: rgba(255, 255, 255, 0.816);
+    align-items: center;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    border: none;
+    transform: translateY(-2.5px);
+    padding-bottom: 8px;
+    color: #000000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.rightbuttons .uploadnav i{
+    font-size: 27px;
+    transform: translateY(5px);
+}
+.rightbuttons{
+    float: right;
+    margin-top: 20px;
 }
 .article{
     padding: 50px;
@@ -167,6 +196,57 @@ body{
 .splitarticle p{
     margin-right: 40px;
 }
+.uploadsheet{
+    padding: 35px;
+}
+.uploadsheet h1{
+    font-size: 35px;
+}
+.uploadsheet h2{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.submitoptions{
+    display: flex;
+    width: 100%;
+}
+.submitoptions a{
+    width: 100%;
+    margin-right: 10px;
+}
+.uploadsheet .getintouch{
+    margin-top: 35px;
+    background-color: #eeeeee;
+    padding: 15px;
+    outline: 1px solid #c6c6c6;
+    border-radius: 15px;
+}
+.uploadsheet .getintouch h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.uploadsheet .getintouch button{
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    border-radius: 11px;
+    margin-right: 10px;
+    font-size: 25px;
+    padding: 10px;
+    transition: ease 0.2s;
+    cursor: pointer;
+    outline: 1px solid #0000004b;
+}
+.uploadsheet .getintouch button:hover{
+    transform: scale(1.02);
+}
+.uploadsheet .getintouch .submitoption1{
+    background-color: #e7f4ff;
+}
+.uploadsheet .getintouch .submitoption2{
+    background-color: #ffffd5;
+}
 @media screen and (max-width: 650px) {
     .home-icon{
         height: 300px;
@@ -211,6 +291,12 @@ body{
     .splitarticle{
         display: block;
     }
+        .submitoptions{
+        display: block;
+    }
+    .uploadsheet .getintouch button{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 450px) {
     .home-icon .article-title{
@@ -229,22 +315,46 @@ body{
         transition: ease 0.5s;
     }
     .nav .logo{
-        margin-left: 11px;
-        margin-top: 10px;
+        height: 50px;
+        margin-left: 12px;
+        margin-top: 15px;
     }
-    .nav .homebutton{
-        float: right;
-        margin-right: 22px;
-        font-size: 18px;
-        margin-top: 24px;
+    .rightbuttons .homebutton{
+        margin-right: 35px;
+        font-size: 27px;
         outline: 1px solid #ffffff73;
         background-color: rgba(0, 14, 58, 0.397);
-        padding-left: 18px;
-        color: #fff;
-        padding-right: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
-        border-radius: 13px;
+        color: #fff;
+        border-radius: 15px;
         cursor: pointer;
     }
+    .rightbuttons .uploadnav{
+        font-size: px;
+        outline: 1px solid #ffffff73;
+        background-color: rgba(255, 255, 255, 0.816);
+        align-items: center;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        border: none;
+        transform: translateY(-2px);
+        padding-bottom: 8px;
+        color: #000000;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .rightbuttons .uploadnav i{
+        font-size: 27px;
+        transform: translateY(5px);
+    }
+    .rightbuttons{
+        float: right;
+        margin-top: 22px;
+    }
+
 }
