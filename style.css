@@ -1,14 +1,13 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Satoshi', sans-serif;
+    font-family: "Figtree", sans-serif;
 }
 
 :root{
     /* ===== Colors ===== */
-    --body-color: #ffffff;
+    --body-color: #181818;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -46,6 +45,14 @@ body{
     margin-top: 10px;
     transition: ease 0.2s;
 }
+.homeheading{
+    color: #fff;
+    padding-top: 10px;
+    transform: translateY(15px);
+    margin-left: 25px;
+    font-size: 35px;
+    font-weight: 600;
+}
 .rightbuttons .homebutton{
     margin-right: 35px;
     font-size: 27px;
@@ -79,6 +86,10 @@ body{
     font-size: 27px;
     transform: translateY(5px);
 }
+.rightbuttons .homebutton i{
+    font-size: 27px;
+    transform: translateY(2px);
+}
 .rightbuttons{
     float: right;
     margin-top: 20px;
@@ -89,6 +100,7 @@ body{
 .article .headline{
     font-size: 35px;
     line-height: 1.2;
+    color: #fff;
     font-weight: 500;
 }
 .article .bannerimg{
@@ -102,11 +114,15 @@ body{
     font-size: 20px;
     line-height: 1.5;
     margin-top: 20px;
-    color: #232323;
+    color: #cbcbcb;
+}
+.article .postdate{
+    color: #fff;
 }
 .article .author{
     font-weight: 400;
     font-size: 20px;
+    color: #fff;
 }
 .article .imagegrid{
     display: flex;
@@ -118,7 +134,7 @@ body{
     border-radius: 15px;
 }
 .footer{
-    background-color: #efefef;
+    background-color: #cccccc;
     height: 190px;
     padding: 40px;
     border-top-left-radius: 15px;
@@ -140,13 +156,17 @@ body{
     padding-left: 14px;
     padding-right: 10px;
 }
+.tiles{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 50% 50%;
+}
 .home-icon{
     position: relative;
     object-fit: cover;
-    width: calc(100%-90px);
-    height: 200px;
-    margin-left: 45px;
-    margin-right: 45px;
+    width: 100%;
+    height: 220px;
+    padding-right: 12px;
     padding-top: 10px;
     border-radius: 9px;
     cursor: pointer;
@@ -157,10 +177,12 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    filter: brightness(60%)
+    filter: brightness(60%);
+    outline: 1px solid #5b5b5b;
 }
 .home-icon:hover{
-    opacity: 85%;
+    transform: scale(1.02);
+    filter: brightness(1.4);
 }
 .home-icon .article-title{
     font-weight: 500;
@@ -201,10 +223,12 @@ body{
 }
 .uploadsheet h1{
     font-size: 35px;
+    color: #fff;
 }
 .uploadsheet h2{
     margin-top: 15px;
     font-size: 25px;
+    color: #c6c6c6;
     font-weight: 400;
 }
 .submitoptions{
@@ -217,13 +241,14 @@ body{
 }
 .uploadsheet .getintouch{
     margin-top: 35px;
-    background-color: #eeeeee;
+    background-color: #252525;
     padding: 15px;
-    outline: 1px solid #c6c6c6;
+    outline: 1px solid #4c4c4c;
     border-radius: 15px;
 }
 .uploadsheet .getintouch h3{
     font-size: 25px;
+    color: #fff;
     font-weight: 500;
 }
 .uploadsheet .getintouch button{
@@ -243,13 +268,19 @@ body{
     transform: scale(1.02);
 }
 .uploadsheet .getintouch .submitoption1{
-    background-color: #e7f4ff;
+    background-color: #b1d7f6;
 }
 .uploadsheet .getintouch .submitoption2{
-    background-color: #ffffd5;
+    background-color: #e4e4a4;
 }
 @media screen and (max-width: 650px) {
+    .tiles{
+        display: block;
+        padding: none;
+    }
     .home-icon{
+        padding-left: 0px;
+        padding-right: 0px;
         height: 300px;
         border-radius: 15px;
     }
@@ -270,7 +301,6 @@ body{
         font-size: 22px;
         line-height: 1.4;
         margin-top: 20px;
-        color: #232323;
     }
     .article .headline{
         font-size: 26px;
@@ -290,7 +320,6 @@ body{
         border-radius: 15px;
     }
     .footer{
-        background-color: #efefef;
         height: 240px;
         padding: 30px;
         border-top-left-radius: 15px;
@@ -318,7 +347,7 @@ body{
         object-fit: cover;
         width: calc(100%-90px);
         height: 300px;
-        margin-left: 13px;
+        margin-left: 2px;
         margin-right: 10px;
         padding-top: 10px;
         border-radius: 15px;
