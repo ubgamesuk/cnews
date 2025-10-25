@@ -29,6 +29,17 @@ body{
     margin-right: 12px;
     font-size: 26px;
 }
+.websitelnkbutton{
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.websitelnkbutton:hover{
+    transform: scale(0.95);
+}
 .nav{
     background-color: #120dbf;
     height: 80px;
