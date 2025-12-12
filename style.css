@@ -166,6 +166,11 @@ body{
     margin-top: 20px;
     color: #cbcbcb;
 }
+.article .subtext{
+    color: #cbcbcb;
+    margin-top: 10px;
+    font-size: 28px;
+}
 .article .postdate{
     color: #fff;
 }
@@ -180,8 +185,14 @@ body{
 .article .imagegrid .gridimage{
     width: calc(25% - 20px);
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 23px;
     border-radius: 15px;
+    outline: 1px solid #626262;
+    transition: ease 0.3s;
+}
+.article .imagegrid .gridimage:hover{
+    transform: scale(1.04);
+    cursor: pointer;
 }
 .footer{
     background-color: #cccccc;
