@@ -22,7 +22,7 @@ body{
     transition: var(--tran-05);
 }
 .content{
-    transform: translateY(110px);
+    transform: translateY(80px);
 }
 .content i{
     transform: translateY(3.5px);
@@ -68,18 +68,17 @@ body{
 }
 .nav{
     background-color: #120dbf;
-    height: 80px;
-    outline: solid 1px #ffffff6b;
-    margin: 10px;
-    border-radius: 19px;
+    height: 64px;
+    border-bottom: solid 1px #ffffff6b;
     position: fixed;
-    width: calc(100% - 20px);
+    width: 100%;
     z-index: 9999;
 }
 .nav .logo{
-    height: 60px;
-    margin-left: 19px;
-    margin-top: 10px;
+    height: 35px;
+    margin-left: 21px;
+    margin-top: 15px;
+    cursor: pointer;
     transition: ease 0.2s;
 }
 .homeheading{
@@ -102,28 +101,13 @@ body{
 .homesubheading b{
     font-weight: 500;
 }
-.rightbuttons .homebutton{
-    margin-right: 35px;
-    font-size: 27px;
-    outline: 1px solid #ffffff73;
-    background-color: rgba(0, 14, 58, 0.397);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: #fff;
-    border-radius: 15px;
-    cursor: pointer;
-}
 .rightbuttons .uploadnav{
     font-size: 20px;
     outline: 1px solid #ffffff73;
     background-color: rgba(255, 255, 255, 0.816);
     align-items: center;
     font-weight: 500;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
+    padding: 2px 9px 3px 4px;
     border: none;
     transform: translateY(-2.5px);
     padding-bottom: 8px;
@@ -141,11 +125,19 @@ body{
 }
 .rightbuttons{
     float: right;
-    margin-top: 20px;
+    margin-right: 21px;
+    margin-top: 14px;
 }
 .article{
     padding: 50px;
     transform: translateY(-20px);
+}
+.article .articleinfo{
+    width: 100%;
+    padding: 10px;
+    outline: 1px solid #525252;
+    background-color: #242424;
+    border-radius: 12px;
 }
 .article .headline{
     font-size: 35px;
@@ -416,31 +408,16 @@ body{
         transition: ease 0.5s;
     }
     .nav .logo{
-        height: 50px;
+        height: 30px;
         margin-left: 12px;
-        margin-top: 15px;
-    }
-    .rightbuttons .homebutton{
-        margin-right: 25px;
-        font-size: 27px;
-        outline: 1px solid #ffffff73;
-        background-color: rgba(0, 14, 58, 0.397);
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        color: #fff;
-        border-radius: 15px;
-        cursor: pointer;
+        margin-top: 17px;
     }
     .rightbuttons .uploadnav{
         outline: 1px solid #ffffff73;
         background-color: rgba(255, 255, 255, 0.816);
         align-items: center;
         font-weight: 500;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
+        font-size: 19px;
         border: none;
         transform: translateY(-2.5px);
         padding-bottom: 8px;
@@ -449,12 +426,12 @@ body{
         cursor: pointer;
     }
     .rightbuttons .uploadnav i{
-        font-size: 27px;
+        font-size: 25px;
         transform: translateY(5px);
     }
     .rightbuttons{
         float: right;
-        margin-top: 20px;
+        margin-top: 14px;
     }
 
 }
