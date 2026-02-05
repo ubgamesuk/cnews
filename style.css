@@ -358,6 +358,7 @@ body{
     }
     .article .headline{
         font-size: 26px;
+        margin-top: 25px;
         line-height: 1.2;
         font-weight: 500;
     }
