@@ -327,6 +327,10 @@ body{
 .uploadsheet .getintouch .submitoption2{
     background-color: #e4e4a4;
 }
+.termstext{
+    color: #dcdcdc;
+    font-size: 20px;
+}
 @media screen and (max-width: 650px) {
     .tiles{
         display: block;
