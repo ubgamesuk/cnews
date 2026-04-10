@@ -188,27 +188,39 @@ body{
     cursor: pointer;
 }
 .footer{
-    background-color: #cccccc;
-    height: 190px;
+    background-color: #383838;
     padding: 40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.footer .footertext{
-    font-size: 23px;
-    letter-spacing: -0.8px;
-    line-height: 31px;
-    font-weight: 500;
-    padding-left: 14px;
-    padding-right: 10px;
+.footer .footerlogo{
+    height: 30px;
+    margin-left: 12px;
+    margin-bottom: 15px;
 }
 .footer .copyrighttext{
     font-size: 19px;
-    letter-spacing: -0.8px;
-    line-height: 1;
+    letter-spacing: -0.3px;
     font-weight: 600;
+    color: #fff;
     padding-left: 14px;
-    padding-right: 10px;
+}
+.socialfooter{
+    margin-left: 15px;
+    margin-top: 7px;
+    padding-bottom: 20px;
+}
+.socialsub{
+    margin-left: 15px;
+    font-size: 27px;
+    font-weight: 500;
+    color: #fff;
+}
+.socialfooter i{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 34px;
+    cursor: pointer;
 }
 .tiles{
     display: grid;
