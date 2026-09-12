@@ -7,7 +7,7 @@
 
 :root{
     /* ===== Colors ===== */
-    --body-color: #181818;
+    --body-color: #131313;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -68,27 +68,28 @@ body{
     border-radius: 10px;
 }
 .nav{
-    background-color: #1e1edb;
+    background-color: #deff00;
     height: 64px;
-    border-bottom: solid 1px #ffffff6b;
     position: fixed;
     width: 100%;
     z-index: 9999;
 }
 .nav .logo{
-    height: 35px;
-    margin-left: 21px;
-    margin-top: 15px;
+    height: 38px;
+    margin-left: 19px;
+    margin-top: 13px;
     cursor: pointer;
     transition: ease 0.2s;
 }
 .homeheading{
     color: #fff;
-    padding-top: 10px;
+    padding-top: 5px;
     transform: translateY(15px);
     margin-left: 25px;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 39px;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    letter-spacing: -1.2px;
 }
 .homesubheading{
     color: #fff;
@@ -104,14 +105,14 @@ body{
 }
 .rightbuttons .uploadnav{
     font-size: 20px;
-    outline: 1px solid #ffffff73;
-    background-color: rgba(255, 255, 255, 0.816);
+    background-color: rgba(255, 255, 255, 0.495);
     align-items: center;
     font-weight: 500;
     padding: 2px 9px 3px 4px;
     border: none;
     transform: translateY(-2.5px);
     padding-bottom: 8px;
+    outline: 2px solid #1414141a;
     color: #000000;
     border-radius: 15px;
     cursor: pointer;
@@ -188,15 +189,16 @@ body{
     cursor: pointer;
 }
 .footer{
-    background-color: #383838;
+    background-color: #1c1c1c;
     padding: 40px;
+    outline: 2px solid #383838;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .footer .footerlogo{
-    height: 30px;
+    height: 38px;
     margin-left: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 .footer .copyrighttext{
     font-size: 19px;
@@ -285,11 +287,16 @@ body{
     margin-right: 40px;
 }
 .uploadsheet{
-    padding: 35px;
+    padding: 30px;
 }
 .uploadsheet h1{
-    font-size: 35px;
+    font-size: 39px;
     color: #fff;
+    padding-bottom: 10px;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    line-height: 40px;
 }
 .uploadsheet h2{
     margin-top: 15px;
