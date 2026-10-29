@@ -1,3 +1,4 @@
+@import url('https://api.fontshare.com/v2/css?f[]=sentient@300,400,401,500,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -49,23 +50,43 @@ body{
     transform: scale(0.95);
 }
 .homefilterselect{
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 25px;
     text-align: left;
 }
 .storyfilter{
     color: #fff;
-    font-size: 17px;
+    background-color: #161616;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 10px 10px 10px 0px;
+    font-size: 13px;
+    outline: 1.5px solid #3d3d3d;
     font-weight: 300;
     cursor: pointer;
 }
 .storyfilteractive{
-    background-color: #242424;
-    padding: 7px;
-    font-size: 23px;
-    outline: 1px solid #5d5d5d;
-    font-weight: 700;
-    border-radius: 10px;
+    background-color: #383838;
+    margin-right: 10px;
+    padding: 10px;
+    font-weight: 600;
+    position: relative;
+    border-radius: 15px;
+}
+.storyfilter2{
+    color: #fff;
+    background-color: #161616;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 10px 0px 10px 10px;
+    font-size: 13px;
+    outline: 1.5px solid #3d3d3d;
+    font-weight: 300;
+    cursor: pointer;
+}
+.storyfilter2 .storyfilteractive{
+    margin-left: 10px;
+    margin-right: 0px;
 }
 .nav{
     background-color: #deff00;
@@ -86,9 +107,9 @@ body{
     padding-top: 5px;
     transform: translateY(15px);
     margin-left: 25px;
-    font-size: 39px;
-    font-family: "Agbalumo", system-ui;
-    font-weight: 400;
+    font-size: 35px;
+    font-family: 'Sentient', serif;
+    font-weight: 500;
     letter-spacing: -1.2px;
 }
 .homesubheading{
@@ -143,9 +164,10 @@ body{
 }
 .article .headline{
     font-size: 35px;
+    letter-spacing: -0.3px;
     line-height: 1.2;
+    font-family: 'Sentient', serif;
     color: #fff;
-    font-weight: 500;
 }
 .article .bannerimg{
     width: 80%;
@@ -161,9 +183,11 @@ body{
     color: #cbcbcb;
 }
 .article .subtext{
-    color: #cbcbcb;
-    margin-top: 10px;
-    font-size: 28px;
+    color: #f3f3f3;
+    font-family: 'Sentient', serif;
+    font-weight: 500;
+    margin-top: 25px;
+    font-size: 26px;
 }
 .article .postdate{
     color: #fff;
@@ -253,11 +277,12 @@ body{
     filter: brightness(1.4);
 }
 .home-icon .article-title{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 28px;
     line-height: 1.1;
     width: 75%;
     color: #ffffff;
+    font-family: 'Sentient', serif;
     padding-right: 10px;
 }
 .home-icon .article-date{
@@ -290,13 +315,12 @@ body{
     padding: 30px;
 }
 .uploadsheet h1{
-    font-size: 39px;
+    font-size: 35px;
+    font-family: 'Sentient', serif;
+    font-weight: 500;
     color: #fff;
     padding-bottom: 10px;
-    font-family: "Agbalumo", system-ui;
-    font-weight: 400;
     letter-spacing: -1.2px;
-    line-height: 40px;
 }
 .uploadsheet h2{
     margin-top: 15px;
@@ -382,7 +406,9 @@ body{
     .article .headline{
         font-size: 26px;
         margin-top: 25px;
+        letter-spacing: -0.3px;
         line-height: 1.2;
+        font-family: 'Sentient', serif;
         font-weight: 500;
     }
     .article .postdate{
